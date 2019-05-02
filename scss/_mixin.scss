@@ -1,0 +1,98 @@
+// Fonts
+@mixin haloe ($fontS) {
+        font-size: $fontS ;
+        font-family: $font-josefin;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 26px;
+        letter-spacing: 3px;        
+}
+
+@mixin font-search {
+    font-family: $font-aleo;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.857;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+@mixin josefin14 {
+    font-family: $font-josefin;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.857;
+    letter-spacing: 2.5px;
+    color: $white;     
+}
+
+@mixin h-aloe {   
+    font-size: 36px;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 36px;
+    font-family: $font-aleo;
+    color: $white;  
+    text-transform: capitalize;  
+}
+
+@mixin p-josefin{
+        font-size: 16px;
+    font-family: $font-josefin;
+    color: $white;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+      
+// placeholder
+
+@mixin placeholder {
+    font-family: $font-josefin;
+    color: $gray;
+    font-size: 14px;   
+    line-height: 28px;
+    letter-spacing: 2.3px;
+    font-weight: 300;
+    text-align: center; 
+}
+
+@mixin span-spain {
+    color: $light-gray;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    font-family: $font-josefin;  
+}
+
+@mixin p-spain {
+    color: $light-gray;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: $font-josefin; 
+}
+
+// choice_button
+
+@mixin choice__button {
+        font-size: 16px;
+    line-height: 26px;
+    color:$white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $font-aleo;
+    letter-spacing: 1.2px;
+    background-color: $soft-blue;
+    background: linear-gradient(45deg, $bright-blue 50%, $soft-blue 0%);
+    
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 1em $white;
+        // background: darken($bright-blue,5);
+        transition: background-color 1s;
+    }
+}

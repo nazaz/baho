@@ -1,0 +1,144 @@
+// 
+
+
+.hero {
+    background-image: url('../img/bg_bhromaon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+        & h1 {@include haloe (48px);
+            margin-bottom: 18px;
+        }
+
+        & span {
+            font-size: 22px;
+            letter-spacing: 5px;
+            line-height: 21px;
+            color: #ffffff;
+            font-family: $font-josefin;
+            margin-bottom: 50px;
+        }
+// paralax
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective-origin: 0 0;
+    // background-attachment: fixed;
+}
+// remove the scroll ( !important)
+.hero::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.grid__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+
+        &hero__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            & h1 {
+                color: red;
+            }
+    }
+
+}
+
+.hero__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form.heero__search {
+    display: flex;
+    width: 650px;
+    height: 50px;
+    margin-bottom: 120px;
+}
+
+.search__input {
+
+    &::placeholder{
+        
+        @include placeholder;
+        
+    }
+    caret-color: $light-red;
+    outline: none;
+    width: 502px;
+    height: 60px;
+    text-align: center;
+    color: $bright-blue;
+    border: 2px solid $white;
+    
+}
+
+.button {
+    outline: none;
+    border: 2px solid $white;
+    width: 150px;
+    height: 60px;
+    padding-left: 27px;
+    background-color: $soft-blue;
+    
+    @include font-search ;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 1em $white;
+        background-color: darken($soft-blue, 15);
+        transition: background-color 1s;
+    }
+}
+
+.fa-search {
+    margin-left: 15px;
+}
+
+.hero__scroll a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 135px;
+
+    @include josefin14;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 1em $white;
+        color: $mostly-pure;
+        transition: text-shadow  1s;
+    }
+}
+
+
+
+
+
+// .demo img.raz {
+//     -moz-transform:scale(0);
+//     -webkit-transform:scale(0);
+//     -o-transform:scale(0);
+//     -ms-transform:scale(0);
+//   }
+  
+//   .demo:hover img.raz {
+//     -moz-transform:scale(1);
+//     -webkit-transform:scale(1);
+//     -o-transform:scale(1);
+//     -ms-transform:scale(1);
+//   }
+  
+//   .demo:hover img.dva {
+//     -moz-transform:scale(0);
+//     -webkit-transform:scale(0);
+//     -o-transform:scale(0);
+//     -ms-transform:scale(0);
+//   }

@@ -1,0 +1,227 @@
+// Choose
+.choice {
+    width: 100%;
+    height: 685px;
+    background:center url('../img/bg_Choose_us.png') no-repeat;
+    background-size: cover;   
+    background-attachment: fixed; 
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 131px 0px;
+}
+
+.choice__desc {
+    width: 100% - 55%;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 47px 0px;
+
+    & h2 {
+        @include h-aloe;
+        margin-bottom: 48px;
+    }
+
+    & p {
+        @include p-josefin;
+        margin-bottom: 10px;
+    }
+}
+
+.choice__img {
+    display: flex;
+    flex-direction: column;
+    width: 100% - 55%;
+    justify-content: center; 
+}
+
+.choice__img-1 {
+    margin-top: -50px;
+    margin-left: 29px;
+}
+
+.choice-img-2 {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.choice__button{
+    @include choice__button;
+    display: inline-block;
+    padding: 20px 40px;
+    
+}
+
+.choice--btn {
+    margin-top: 31px;
+}
+
+// variabl
+.variabl {
+    width: 100%;
+    background-color: $Very-dark-gray;  
+}
+
+.variabl__grid {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.variabl__arow {
+    display: flex;
+    margin-left: 31px;
+    margin-top: 40px;
+}
+
+.variabl__list {
+    width: 100%; 
+    margin-bottom: 169px;
+}
+
+.variabl__link {
+    display: flex;
+    justify-content: space-around;
+    margin: -50px;
+}
+
+.variabl__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+        @include h-aloe;
+
+        &:hover {
+            color: $light-red;
+            
+        }
+    }
+}
+
+object {
+    background-color: $Very-dark-gray;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+// card
+.card {
+    background: url('../img/bg_spain.png')no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+}
+
+.grid__card {
+    align-items: center;
+}
+
+
+
+.card__city {
+    box-sizing: border-box;
+    width: 540px;
+    padding: 50px 30px;
+    background: $mostly-black-rgba;
+    margin: 229px 0px 100px;
+    
+    & span {
+       @include span-spain;
+    }
+
+    & h2 {
+    color: $white;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: $font-josefin;
+    }
+
+    & p {
+        @include p-josefin;
+        margin-bottom: 48px;
+    }
+}
+
+.card__button {
+    padding: 17px 63px;
+}
+
+// card citi2
+.card__country {
+    background: url('../img/bg_rock.png')no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+}
+
+.grid__card--country {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+// conversation
+.conversation {
+    background: url('../img/bg_man_down.png')no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+
+    & h2 {
+        @include  h-aloe;
+        margin-top: 120px
+    }
+
+    & h1 {
+        color: $white;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 26px;
+        font-family: $font-josefin;
+        text-transform: uppercase;
+        padding-bottom: 25px;
+    }
+}
+
+.conversation__grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+figure {
+    margin: 70px 0px 197px;
+}
+
+figcaption {
+    float: right;
+    background: $Very-dark-gray;
+    padding: 31px 24px 26px;
+}
+
+blockquote {
+    width: 495px;
+    
+
+    @include p-josefin;
+}
+
+.fa-quote-left {
+    color: $bright-blue;
+    font-size: 18px;
+    position: relative;
+    top: -14px;
+    right: 3px;
+}
+
+
+
+
